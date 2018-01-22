@@ -208,7 +208,7 @@ bool Nvidia::setCurvePoints(const std::initializer_list<TemperatureSpeed> &point
 
 bool Nvidia::setFanOffOffset(const qint32 fanOffOffset)
 {
-    if (fanOffOffset <= 0 || fanOffOffset > 10)
+    if (fanOffOffset <= 0 || fanOffOffset > 20)
         return false;
     m_fanOffOffset = fanOffOffset;
     return true;

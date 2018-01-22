@@ -47,10 +47,13 @@ int main(int argc, char *argv[])
     if (nvidia.isOk())
     {
         nvidia.setCurvePoints({
-            {55, 20},
-            {70, 70},
+            {55, 17},
+            {70, 40},
+            {80, 60},
+            {90, 80},
             {95, 90}
         });
+        nvidia.setFanOffOffset(15);
         nvidia.setErrorCallback([] {
             QCoreApplication::exit(-2);
         });
