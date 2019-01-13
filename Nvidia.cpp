@@ -141,7 +141,7 @@ bool Nvidia::setCurvePoints(const std::initializer_list<TemperatureSpeed> &point
 {
     constexpr size_t len = 100;
 
-    constexpr auto compare = [](const TemperatureSpeed &a, const TemperatureSpeed &b) {
+    const auto compare = [](const TemperatureSpeed &a, const TemperatureSpeed &b) {
         return a.temperature < b.temperature;
     };
 

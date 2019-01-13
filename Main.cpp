@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
     int ret = -1;
     if (started)
     {
-        constexpr auto signalCallBack = [](int) {
+        const auto signalCallBack = [](int) {
             QCoreApplication::quit();
         };
         signal(SIGINT,  signalCallBack);
